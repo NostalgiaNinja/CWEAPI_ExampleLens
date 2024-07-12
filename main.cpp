@@ -30,7 +30,7 @@ extern "C"
 		cwe_api->RegisterChaoTexlistLoad("ExampleLens", &Example_texlist);
 		
 		//Register your lens to the black market:
-		cwe_api->RegisterChaoSpecial(MDLExampleLensBox->getmodel(), &Example_texlist, &BMExampleLens, ALS_LensSpecial, NULL, "Lens Name", "Lens Description", 0);
+		ExampleLensID = cwe_api->RegisterChaoSpecial(MDLExampleLensBox->getmodel(), &Example_texlist, &BMExampleLens, ALS_LensSpecial, NULL, "Lens Name", "Lens Description", 0);
 
 		//Associate the lens as a custom eye color:
 		cwe_api->RegisterEyeColor("testlens", &Example_texlist, ExampleLensID);
