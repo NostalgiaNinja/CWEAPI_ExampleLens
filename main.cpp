@@ -47,7 +47,7 @@ extern "C"
 		ALS_LensSpecial = (decltype(ALS_LensSpecial))GetProcAddress(GetModuleHandle(L"CWE"), "ALS_LensSpecial");
 
 		//Tell what models need to be associated to their variables here.
-		MDLExampleLensBox = new ModelInfo(pathStr = "lens.sa2mdl");
+		MDLExampleLensBox = new ModelInfo(pathStr + "lens.sa2mdl");
 
 		RegisterDataFunc = (void (*)(void* ptr))GetProcAddress(h, "RegisterDataFunc");
 		RegisterDataFunc(CWELoad);
